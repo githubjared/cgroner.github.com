@@ -4,7 +4,9 @@ layout: home
 
 <div id="post">
 <a href="/">Go Back</a>
+<br/>
+Posted: {{ page.date | date: "%d %B %Y"}}
+<br/>
 {{content}}
 
-{{ post.date }}
 </div>
