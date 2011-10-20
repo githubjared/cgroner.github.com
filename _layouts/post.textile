@@ -1,0 +1,10 @@
+---
+layout: home
+---
+
+<div id="post">
+<a href="/">Go Back</a>
+{{content}}
+
+{{ post.date }}
+</div>
