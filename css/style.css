@@ -7,6 +7,10 @@ body {
 	width: 100%;
 }
 
+a {
+	color:red;
+}
+
 #bg-image {
 	position: absolute;
 	z-index: -1;
@@ -22,8 +26,18 @@ body {
 
 #navigation {
 	text-align: right; 
-	margin: 25px;
+	margin: 10px;
+	padding: 0;
 	float:right;
+	font-size: 1.2em;
+}
+
+#navigation li {
+	list-style-type: none;
+}
+
+#navigation li:hover {
+	list-style-type: disc;
 }
 
 #post {
@@ -33,6 +47,7 @@ body {
 	margin: 10px;
 	padding: 15px;
 	float:left;
+	min-width: 650px;
 
 	-moz-border-radius: 10px;
 	-webkit-border-radius: 10px;

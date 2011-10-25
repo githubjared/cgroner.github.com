@@ -1,0 +1,27 @@
+---
+layout: home
+title: About carlgroner.me
+---
+<div id="post">
+<a href="/">Go Back</a>
+<br/>
+
+h1. About this site.
+
+Hi, I'm Carl and this is my homepage on the web. I am a computer programmer 
+(among other things) from Los Angeles, CA. 
+
+I'm currently using this site to keep track of information that I find 
+useful (and hope others may find useful as well). This is mostly related to
+computers, programming and information technology in general. 
+
+This site is graciously hosted by git hub as my user page. You can find 
+more information about github user pages "here":http://pages.github.com. The source for this site 
+is kept "here":https://github.com/cgroner/cgroner.github.com .
+
+h2. Contact.
+
+I can be contacted via <a href="mailto:cgroner@gmail.com?subject=Hi, Carl">email</a> <c.groner@gmail.com> or through my 
+<a href="https://github.com/cgroner">github profile</a>.
+
+</div>
