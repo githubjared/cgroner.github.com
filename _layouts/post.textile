@@ -9,6 +9,10 @@ layout: home
 {{content}}
 
 Posted: {{ page.date | date: "%B %d, %Y"}} by <a href="/about.html" rel="author">Carl Groner</a>
+<br/>
+{{ if page.last_changed }}
+Last Changed:  {{page.last_changed | date: "%B %d, %Y"}}
+{{ endif }}  
 
 <div id="disqus_thread"></div>
 <script type="text/javascript">

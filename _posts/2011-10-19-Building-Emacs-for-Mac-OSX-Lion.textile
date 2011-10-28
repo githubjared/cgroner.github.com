@@ -1,16 +1,22 @@
 ---
 layout: post
-title: Building Emacs for Mac OS X Lion
+title: Building Emacs 24 for Mac OS X Lion
 category: [Emacs, OSX]
+last_changed: 2011-10-26
 ---
 
-h1. Building Emacs for Mac OS X Lion 
+h1. {{ page.title }}
 
 Emacs has included source for building emacs using the Cocoa libraries on 
 OS X for some time now. Unfortunately, the current source requires @autoconf@ 
 version 2.65 or later while OS X Lion ships with version 2.61. As of this 
 writing, the autoconf package available through fink is also not new enough 
-at version 2.63.
+at version 2.63. Attempting to configure from source will result in the 
+following error message:
+
+{% highlight bash %}
+  configure.in:24: error: Autoconf version 2.65 or higher is required
+{% endhighlight %}
 
 Fortunately, a workaround is included in the emacs source tree. The included
 @autogen/copy_autogen@ script can be used to copy pre-generated versions of
