@@ -28,15 +28,17 @@
 	</script>
   </head>
   <body>
+	<div id="header">
+	  http://carlgroner.me -> 
+	  <ul id="navigation">
+		<li><a href="/">Home</a></li>
+		<li><a href="/about.html" rel="author">About</a></li>
+		<li><a href="http://github.com/cgroner" rel="me">Github profile</a></li>
+	  </ul>
+	</div>
 	<img id="bg-image" alt="Los Angeles" src="/images/la.jpg" />
 	
 	<div id="content-body">
-	  <ul id="navigation" class="round_shadow">
-		<li><a href="/">Home</a></li>
-		<li><a href="/about.html" rel="author">About</a></li>
-		<li>My <a href="http://github.com/cgroner" rel="me">github profile</a></li>
-	  </ul>
-
 	  {{content}}
 	</div>
 	
