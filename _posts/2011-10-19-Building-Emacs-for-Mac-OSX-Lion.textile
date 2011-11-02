@@ -5,8 +5,6 @@ category: [Emacs, OSX]
 last_changed: 2011-10-26
 ---
 
-h1. {{ page.title }}
-
 Emacs has included source for building emacs using the Cocoa libraries on 
 OS X for some time now. Unfortunately, the current source requires @autoconf@ 
 version 2.65 or later while OS X Lion ships with version 2.61. As of this 
