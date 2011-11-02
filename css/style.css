@@ -11,6 +11,10 @@ a {
 	color:red;
 }
 
+li {
+	list-style-type: none;
+}
+
 #bg-image {
 	position: absolute;
 	z-index: -1;
