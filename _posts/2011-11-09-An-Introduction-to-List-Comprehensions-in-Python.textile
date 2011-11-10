@@ -2,6 +2,7 @@
 layout: post
 title: An Introduction to List Comprehensions in Python
 category: [Python]
+last_changed: 2011-11-10
 ---
 
 <div class="darken-comments">
@@ -93,7 +94,7 @@ test if the number is even and pass it to the @map()@ function.
 Using the list comprehension syntax would look like this:
 
 {% highlight python %}
->>> new_list = [str(x) for x in my_list if (x %2) == 0]
+>>> new_list = [str(x) for x in my_list if (x % 2) == 0]
 >>> new_list
 ['2', '4', '6', '8', '10']
 {% endhighlight %}
@@ -112,7 +113,7 @@ in list comprehensions.
 {% highlight python %}
 >>> list_a = ['A', 'B']
 >>> list_b = [1, 2]
->>> [(X, y) for x in list_a for y in list_b]
+>>> [(x, y) for x in list_a for y in list_b]
 [('A', 1), ('A', 2), ('B', 1), ('B', 2)]
 {% endhighlight %}
 
