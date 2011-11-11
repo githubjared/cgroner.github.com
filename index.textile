@@ -1,6 +1,6 @@
 ---
 layout: home
-title: Carl Groner's User Page
+title: Home
 ---
 
 <div id="post" class="round_shadow">

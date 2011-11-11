@@ -1,10 +1,9 @@
 ---
 layout: home
-title: About carlgroner.me
+title: About This Site
 ---
 <div id="post" class="round_shadow">
 <a href="/">Go Back</a>
-<br/>
 
 h1. About this site.
 
