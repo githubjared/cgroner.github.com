@@ -14,7 +14,7 @@ I'm currently using this site to keep track of information that I find
 useful (and hope others may find useful as well). This is mostly related to
 computers, programming and information technology in general. 
 
-This site is graciously hosted by git hub as my user page. You can find 
+This site is hosted by github as my user page. You can find 
 more information about github user pages "here":http://pages.github.com. The source for this site 
 is kept "here":https://github.com/cgroner/cgroner.github.com .
 
