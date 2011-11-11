@@ -22,7 +22,7 @@ li {
 
 #header {
 	margin: 0px;
-	padding: 2px;
+	padding: 2px 2px 2px 15px;
 	width: 100%;
 	background-color: #000;
 	color: #fff;
@@ -61,7 +61,7 @@ li {
 
 #post {
 	background-color: #fff;
-	opacity: 0.80;
+	opacity: 0.85;
 	margin: 10px;
 	padding: 15px;
 	float:left;
