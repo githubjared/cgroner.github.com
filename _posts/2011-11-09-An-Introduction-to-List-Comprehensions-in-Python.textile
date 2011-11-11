@@ -9,8 +9,7 @@ last_changed: 2011-11-10
 
 h2. The basics.
 
-Let's start with a simple list, a common data structure
-in programming.
+Let's start with a simple list.
 
 {% highlight python %}
 >> my_list = range(1, 11) # create a list of numbers 1 to 10.
@@ -19,8 +18,8 @@ in programming.
 {% endhighlight %}
 
 Quite often, we'll need to build a new list from the elements of an
-existing list. As a simple example, let's say we want to make a 
-list containing all elements of @my_list@, each multiplied by 2.
+existing list. For example, let's say we want to make a list 
+containing all elements of @my_list@, each multiplied by 2.
 A common way to do this is by iterating through the existing list
 and building the new list:
 
@@ -88,8 +87,8 @@ to do this would be:
 ['2', '4', '6', '8', '10']
 {% endhighlight %}
 
-In order to use @map()@ here, we would need to define a function to 
-test if the number is even and pass it to the @map()@ function.
+In order to use @map()@ here we would need to first @filter@ the 
+list to exclude the odd numbers.
 
 Using the list comprehension syntax would look like this:
 
