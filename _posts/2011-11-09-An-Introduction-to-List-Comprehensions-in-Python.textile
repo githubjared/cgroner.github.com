@@ -2,7 +2,7 @@
 layout: post
 title: An Introduction to List Comprehensions in Python
 category: [Python]
-last_changed: 2011-11-10
+last_changed: 2011-12-01
 ---
 
 <div class="darken-comments">
@@ -106,8 +106,8 @@ Neat, clear and concise.
 
 h2. Loops of loops.
 
-Finally, it's worth mentioning that lists can be nested 
-in list comprehensions.
+Finally, it's worth mentioning that you can use list comprehensions
+to iterate on more than one list. For example:
 
 {% highlight python %}
 >>> list_a = ['A', 'B']
@@ -117,8 +117,16 @@ in list comprehensions.
 {% endhighlight %}
 
 Just like you would expect in @for@ loops, the last
-loop moves the fastest. Also note that using nested list
-comprehensions returns a list of @tuples@.
+loop moves the fastest. Also note that this method returns
+a list of @tuples@. If you'd like nested lists, you can
+also nest one list comprehension within another.
+
+{% highlight python %}
+>>> list_a = ['A', 'B']
+>>> list_b = ['C', 'D']
+>>> [[x+y for x in list_a] for y in list_b]
+[['AC', 'BC'], ['AD', 'BD']]
+{% endhighlight %}
 
 h2. Summary.
 
