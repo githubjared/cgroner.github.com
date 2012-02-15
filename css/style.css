@@ -1,106 +1,107 @@
 body { 
-	font-family: 'Inconsolata', sans-serif;
-	overflow: hidden;
-	padding:0;
-	margin:0;
-	height: 100%;
-	width: 100%;
+    font-family: 'Inconsolata', sans-serif;
+    overflow: hidden;
+    padding:0;
+    margin:0;
+    height: 100%;
+    width: 100%;
 }
 
 a {
-	color:red;
+    color:red;
 }
 
 li {
-	list-style-type: none;
+    list-style-type: none;
 }
 
 #bg-image {
-	position: absolute;
-	z-index: -1;
+    position: absolute;
+    z-index: -1;
 }
 
 #header {
-	margin: 0px;
-	padding: 2px 2px 2px 15px;
-	width: 100%;
-	background-color: #000;
-	color: #fff;
-	opacity: 0.75;
-	font-style: oblique;
+    margin: 0px;
+    padding: 2px 2px 2px 15px;
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    opacity: 0.75;
+    font-style: oblique;
 }
 
 #header a {
-	color: #fff;
-	text-decoration: none;
-	margin-left: 5px;
-	margin-right: 5px;
+    color: #fff;
+    text-decoration: none;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 #header a:hover {
-	text-decoration: underline;
+    text-decoration: underline;
 }
 
 #header ul {
-	margin: 0px;
-	display: inline;
-	padding: 0px;
+    margin: 0px;
+    display: inline;
+    padding: 0px;
 }
 
 #header ul li {
-	display: inline;
+    display: inline;
 }
 
 #content-body {
-	position: absolute;
-	z-index: 5;
-	overflow: auto;
-	height: 100%;
-	width: 100%;
+    position: absolute;
+    z-index: 5;
+    overflow: auto;
+    height: 100%;
+    width: 100%;
 }
 
 #post {
-	background-color: #fff;
-	opacity: 0.85;
-	margin: 10px;
-	padding: 15px;
-	float:left;
-	min-width: 650px;
-	max-width: 800px;
+    background-color: #fff;
+    opacity: 0.85;
+    margin: 10px;
+    padding: 15px;
+    float:left;
+    min-width: 650px;
+    max-width: 800px;
 }
 
 #footer {
-	position: absolute;
-	left: 0px;
-	bottom: 0px;
-	width: 100%;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
 }
 
 #footer p {
-	color: #888;
-	text-align: right;
-	font-size: .8em;
-	margin-right: 2em;
+    color: #888;
+    text-align: right;
+    font-size: .8em;
+    margin-right: 2em;
 }
 
 .round_shadow {
     border-radius: 10px;
 
-	-moz-border-radius: 10px;
-	-webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
     -khtml-border-radius: 10px;
-	
-	-moz-box-shadow: 4px 4px 5px #000;
-	-webkit-box-shadow: 4px 4px 5px #000;
-	box-shadow: 4px 4px 5px #000;
+    
+    -moz-box-shadow: 4px 4px 5px #000;
+    -webkit-box-shadow: 4px 4px 5px #000;
+    box-shadow: 4px 4px 5px #000;
 }
 
 .highlight {
-	background-color: #f0f0f0;
-	border-top: 1px solid #ccc;
-	border-bottom: 1px solid #ccc;
+    background-color: #f0f0f0;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    padding-left: 10px;
 }
 
 .darken-comments .highlight .c { 
-	color: #000; 
+    color: #000; 
 }
