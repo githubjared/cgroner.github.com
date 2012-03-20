@@ -3,6 +3,7 @@ layout: post
 title: Building Emacs 24 for Mac OS X Lion
 category: [Emacs, OSX]
 last_changed: 2011-10-26
+meta_desc: Building Emacs 24 for Mac OS X lion. Solving the autoconf version error.
 ---
 
 Emacs has included source for building emacs using the Cocoa libraries on 

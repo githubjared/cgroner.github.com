@@ -1,6 +1,7 @@
 ---
 layout: home
 title: Home
+meta_desc: Carl Groner's Homepage, Computer Programmer Los Angeles, CA.
 ---
 
 <div id="post" class="round_shadow">
