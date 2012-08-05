@@ -70,6 +70,9 @@ li {
     max-width: 800px;
 }
 
+#post-scl { height: 20px; }
+.gplus-btn, .tweet-btn { float: left; }
+
 #footer {
     position: absolute;
     left: 0px;
@@ -108,3 +111,12 @@ li {
 .darken-comments .highlight .c { 
     color: #000; 
 }
+
+.info-box { 
+	margin-left: 2em; 
+	width: 600px;
+	border: 1px dashed grey; 
+	padding: 1em;
+}
+.info-box img { float:left; padding-right: 1em; }
+
