@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: template
 title: About This Site
 ---
 <div id="post" class="round_shadow">

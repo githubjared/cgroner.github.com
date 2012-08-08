@@ -1,90 +1,25 @@
-body { 
-	font-family: 'Inconsolata', Verdana, Arial, Helvetica, sans-serif;
-    line-height: 1.4em;
-    overflow: hidden;
-    padding:0;
-    margin:0;
-    height: 100%;
-    width: 100%;
+a, a:hover, a:visited {	color: red; }
+li { line-height: 22px; }
+
+body {
+	font-size: 18px;
+	line-height: 22px;
+	font-family: 'Inconsolata', sans-serif;
 }
 
-a {
-    color:red;
+.navbar .nav { 
+	font-size: 18px; 
 }
 
-li {
-    list-style-type: none;
-}
-
-#bg-image {
-    position: absolute;
-    z-index: -1;
-}
-
-#header {
-    margin: 0px;
-    padding: 2px 2px 2px 15px;
-    width: 100%;
-    background-color: #000;
-    color: #fff;
-    opacity: 0.75;
-    font-style: oblique;
-}
-
-#header a {
-    color: #fff;
-    text-decoration: none;
-    margin-left: 5px;
-    margin-right: 5px;
-}
-
-#header a:hover {
-    text-decoration: underline;
-}
-
-#header ul {
-    margin: 0px;
-    display: inline;
-    padding: 0px;
-}
-
-#header ul li {
-    display: inline;
-}
-
-#content-body {
-    position: absolute;
-    z-index: 5;
-    overflow: auto;
-    height: 100%;
-    width: 100%;
-}
-
-#post {
-    background-color: #fff;
-    opacity: 0.85;
-    margin: 10px;
-    padding: 15px;
-    float:left;
-    min-width: 650px;
-    max-width: 800px;
-}
-
-#post-scl { height: 20px; }
+#post-scl { height: 20px; display: block; }
 .gplus-btn, .tweet-btn { float: left; }
 
-#footer {
-    position: absolute;
-    left: 0px;
-    bottom: 0px;
-    width: 100%;
-}
 
-#footer p {
-    color: #888;
-    text-align: right;
-    font-size: .8em;
-    margin-right: 2em;
+#post {
+	background-color: white;
+	padding: 1em;
+	opacity: 0.8;
+	filter: alpha(opacity=80); 
 }
 
 .round_shadow {
@@ -99,6 +34,23 @@ li {
     box-shadow: 4px 4px 5px #000;
 }
 
+.info-box {
+	width: 750px;
+	margin: 0 auto;
+	margin-bottom: 1em;
+	padding: .8em;
+	border: 1px solid grey;
+	background-color: white;
+	opacity: 1;
+
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -khtml-border-radius: 10px;
+}
+
+.info-box img { float: left; padding-right: 1em; }
+
 .highlight {
     font-family: monospace;
     line-height: 1.2em;
@@ -106,17 +58,11 @@ li {
     border-top: 1px solid #ccc;
     border-bottom: 1px solid #ccc;
     padding-left: 10px;
+	margin: 10px 0px;
 }
 
-.darken-comments .highlight .c { 
-    color: #000; 
+.highlight pre {
+	border: none;
+	background-color: inherit;
+	margin: inherit;
 }
-
-.info-box { 
-	margin-left: 2em; 
-	width: 600px;
-	border: 1px dashed grey; 
-	padding: 1em;
-}
-.info-box img { float:left; padding-right: 1em; }
-
