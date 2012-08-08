@@ -1,10 +1,11 @@
 a, a:hover, a:visited {	color: red; }
+h1, h2, h3 { padding: .6em 0px .5em; }
 li { line-height: 22px; }
 
 body {
-	font-size: 18px;
+	font-size: 16px;
 	line-height: 22px;
-	font-family: 'Inconsolata', sans-serif;
+	font-family: 'Inconsolata',Verdana,Arial,Helvetica,sans-serif;
 }
 
 .navbar .nav { 
