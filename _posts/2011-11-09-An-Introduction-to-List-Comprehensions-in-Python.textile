@@ -18,11 +18,7 @@ Let's start with a simple list.
 [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 {% endhighlight %}
 
-Quite often, we'll need to build a new list from the elements of an
-existing list. For example, let's say we want to make a list 
-containing all elements of @my_list@, each multiplied by 2.
-A common way to do this is by iterating through the existing list
-and building the new list:
+Quite often, we'll need to build a new list from the elements of an existing list. For example, let's say we want to make a list containing all elements of @my_list@, each multiplied by 2. A common way to do this is by iterating through the existing list and building the new list:
 
 {% highlight python %}
 >>> new_list = []
@@ -33,8 +29,7 @@ and building the new list:
 [2, 4, 6, 8, 10, 12, 14, 16, 18, 20]
 {% endhighlight %}
 
-Now let's take a look at how to do this using Python's list
-comprehension syntax.
+Now let's take a look at how to do this using Python's list comprehension syntax.
 
 {% highlight python %}
 >>> new_list = [x * 2 for x in my_list]
@@ -44,15 +39,9 @@ comprehension syntax.
 
 h2. Syntax.
 
-The syntax for list comprehension is based on "set builder
-notation":http://en.wikipedia.org/wiki/Set-builder_notation. Given the form @[Y for X in LIST]@,
-@Y@ is commonly referred to as the _output function_ ,  
-@X@ is the _variable_, and @LIST@ is the _input set_. This statement 
-says to do @Y@ on each @X@ in @LIST@.
+The syntax for list comprehension is based on "set builder notation":http://en.wikipedia.org/wiki/Set-builder_notation. Given the form @[Y for X in LIST]@, @Y@ is commonly referred to as the _output function_ , @X@ is the _variable_, and @LIST@ is the _input set_. This statement says to do @Y@ on each @X@ in @LIST@.
 
-For an example of using a different _output function_ , let's say
-say we want a new list that contains each number in @my_list@ as 
-a _string_ type...
+For an example of using a different _output function_ , let's say say we want a new list that contains each number in @my_list@ as a _string_ type...
 
 {% highlight python %}
 >>> [str(x) for x in my_list]
@@ -66,17 +55,11 @@ You may be asking yourself why we wouldn't just use @map()@ here:
 ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10']
 {% endhighlight %}
 
-In this example, @map@ looks like a good alternative. However,
-for slightly more complicated requirements, list comprehension
-can be a bit more concise. For example, when we'd like to specify
-a _predicate_ .
+In this example, @map@ looks like a good alternative. However, for slightly more complicated requirements, list comprehension can be a bit more concise. For example, when we'd like to specify a _predicate_ .
 
 h2. The predicate.
 
-Consider our previous example, where we want to create a list
-of string types for each element in @my_list@, except this time
-we only want the elements which are even numbers. A typical way
-to do this would be:
+Consider our previous example, where we want to create a list of string types for each element in @my_list@, except this time we only want the elements which are even numbers. A typical way to do this would be:
 
 {% highlight python %}
 >>> new_list = []
@@ -88,8 +71,7 @@ to do this would be:
 ['2', '4', '6', '8', '10']
 {% endhighlight %}
 
-In order to use @map()@ here we would need to first @filter@ the 
-list to exclude the odd numbers.
+In order to use @map()@ here we would need to first @filter@ the list to exclude the odd numbers.
 
 Using the list comprehension syntax would look like this:
 
@@ -99,16 +81,13 @@ Using the list comprehension syntax would look like this:
 ['2', '4', '6', '8', '10']
 {% endhighlight %}
 
-This version introduces the _predicate_, an expression after the
-list which acts as a filter on which elements get passed 
-to the output function. 
+This version introduces the _predicate_, an expression after the list which acts as a filter on which elements get passed to the output function. 
 
 Neat, clear and concise.
 
 h2. Loops of loops.
 
-Finally, it's worth mentioning that you can use list comprehensions
-to iterate on more than one list. For example:
+Finally, it's worth mentioning that you can use list comprehensions to iterate on more than one list. For example:
 
 {% highlight python %}
 >>> list_a = ['A', 'B']
@@ -117,10 +96,7 @@ to iterate on more than one list. For example:
 [('A', 1), ('A', 2), ('B', 1), ('B', 2)]
 {% endhighlight %}
 
-Just like you would expect in @for@ loops, the last
-loop moves the fastest. Also note that this method returns
-a list of @tuples@. If you'd like nested lists, you can
-also nest one list comprehension within another.
+Just like you would expect in @for@ loops, the last loop moves the fastest. Also note that this method returns a list of @tuples@. If you'd like nested lists, you can also nest one list comprehension within another.
 
 {% highlight python %}
 >>> list_a = ['A', 'B']
@@ -131,12 +107,7 @@ also nest one list comprehension within another.
 
 h2. Summary.
 
-List comprehension in Python can often provide a neat, clear,
-and concise syntax for creating lists from other lists. However,
-one should always be aware that, particularly for complex
-transformations or predicates, the concise and terse syntax can 
-quickly become very difficult to read. In these cases, it's 
-often beneficial to revert to traditional looping constructs.
+List comprehension in Python can often provide a neat, clear, and concise syntax for creating lists from other lists. However, one should always be aware that, particularly for complex transformations or predicates, the concise and terse syntax can quickly become very difficult to read. In these cases, it's often beneficial to revert to traditional looping constructs.
 
 </div>
 
