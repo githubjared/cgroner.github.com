@@ -4,6 +4,7 @@ title: Building Emacs 24 for Mac OS X Lion
 categories: [Emacs, OSX]
 last_changed: 2012-08-05
 meta_desc: Building Emacs 24 for Mac OS X lion. Solving the autoconf version error.
+permalink: /Emacs/OSX/2011/10/19/Building-Emacs-for-Mac-OSX-Lion.html
 ---
 
 p(info-box). !/images/help-hint.png! As of August 2012, you should consider installing the more current @autoconf@ and @automake@ packages from the "Homebrew Project":http://mxcl.github.com/homebrew/, which are current enough to configure the Emacs source without having to use the @copy_autogen@ script. The following will also work, but is only recommended for instances where the correct build tools are not available.

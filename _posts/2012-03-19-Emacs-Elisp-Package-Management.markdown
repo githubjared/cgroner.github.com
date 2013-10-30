@@ -4,6 +4,7 @@ title: Emacs Elisp Package Management, Finally!
 category: Emacs
 last_changed: 2012-03-19
 meta_desc: Emacs 24 to include package.el and ELPA support for simpler Elisp package management.
+permalink: /Emacs/2012/03/19/Emacs-Elisp-Package-Management.html
 ---
 
 One of the many great things about using Emacs is the giant user

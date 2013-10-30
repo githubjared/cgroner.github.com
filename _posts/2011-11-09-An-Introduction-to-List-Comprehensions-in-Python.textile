@@ -4,6 +4,7 @@ title: An Introduction to List Comprehensions in Python
 category: Python
 last_changed: 2011-12-01
 meta_desc: An introduction to using list comprehension syntax in the Python programming language.
+permalink: /Python/2011/11/09/An-Introduction-to-List-Comprehensions-in-Python.html
 ---
 
 <div class="darken-comments">
