@@ -1,7 +1,7 @@
 ---
 layout: post
 title: An Introduction to List Comprehensions in Python
-category: [Python]
+category: Python
 last_changed: 2011-12-01
 meta_desc: An introduction to using list comprehension syntax in the Python programming language.
 ---

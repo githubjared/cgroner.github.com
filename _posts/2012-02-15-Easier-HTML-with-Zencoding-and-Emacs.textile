@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Easier HTML with zencoding-mode & Emacs
-cateogry: [Emacs, Tips]
+categories: [Emacs, Tips]
 last_changed: 2012-02-15
 meta_desc: An introduction to using zencoding-mode to simplify writing HTML in Emacs.
 ---
