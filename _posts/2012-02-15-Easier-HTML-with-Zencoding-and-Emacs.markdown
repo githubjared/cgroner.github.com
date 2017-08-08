@@ -2,7 +2,7 @@
 layout: post
 title:  Easier HTML with zencoding-mode & Emacs
 categories: [Emacs, Tips]
-last_changed: 2012-02-15
+last_changed: 2017-08-08
 meta_desc: An introduction to using zencoding-mode to simplify writing HTML in Emacs.
 permalink: /2012/02/15/Easier-HTML-with-Zencoding-and-Emacs.html
 ---
@@ -17,7 +17,7 @@ For example, if you were to write the following...
 a#someid.site-link
 {% endhighlight %}
 
-and press C-j (bound to zencoding-expand-line) over this text, zencoding-mode will parse and translate this to an anchor ('a') element with and id of 'someid' and a class of 'site-link'. Note that the identifiers for id ('#') and class ('.') are the same as those you would use in css. The translated HTML would look something like this:
+and press `C-j` (bound to zencoding-expand-line) over this text, `zencoding-mode` will parse and translate this to an anchor ('a') element with and `id` of 'someid' and a `class` of 'site-link'. Note that the identifiers for id ('`#`') and class ('`.`') are the same as those you would use in css. The translated HTML would look something like this:
 
 {% highlight html %}
 <a id="someid" class="site-link"></a>
@@ -41,7 +41,6 @@ becomes:
 </div>
 {% endhighlight %}
 
-I won't go into much more detail about all the features of zencoding-mode, mostly because the project already has an excellent README document with plenty of examples. I will say that this library greatly changed the way I feel about having to write HTML.
+I won't go into much more detail about all the features of `zencoding-mode`, mostly because the project already has an excellent README document with plenty of examples. I will say that this library greatly changed the way I feel about having to write HTML.
 
-You can get all the details about this project on the "zencoding project page":https://github.com/rooney/zencoding 
-at github.
+You can get all the details about this project on the [zencoding project page](https://github.com/rooney/zencoding) on github.

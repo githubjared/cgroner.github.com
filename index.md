@@ -1,5 +1,6 @@
 ---
 layout: template
 title: Home
-meta_desc: carlgroner.me
 ---
+<div class="index-outer">
+</div>

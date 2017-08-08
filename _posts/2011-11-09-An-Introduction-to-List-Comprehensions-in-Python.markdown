@@ -2,14 +2,12 @@
 layout: post
 title: An Introduction to List Comprehensions in Python
 category: Python
-last_changed: 2011-12-01
+last_changed: 2017-08-08
 meta_desc: An introduction to using list comprehension syntax in the Python programming language.
 permalink: /Python/2011/11/09/An-Introduction-to-List-Comprehensions-in-Python.html
 ---
 
-<div class="darken-comments">
-
-h2. The basics.
+## The basics.
 
 Let's start with a simple list.
 
@@ -19,7 +17,7 @@ Let's start with a simple list.
 [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 {% endhighlight %}
 
-Quite often, we'll need to build a new list from the elements of an existing list. For example, let's say we want to make a list containing all elements of @my_list@, each multiplied by 2. A common way to do this is by iterating through the existing list and building the new list:
+Quite often, we'll need to build a new list from the elements of an existing list. For example, let's say we want to make a list containing all elements of `my_list`, each multiplied by 2. A common way to do this is by iterating through the existing list and building the new list:
 
 {% highlight python %}
 >>> new_list = []
@@ -38,29 +36,29 @@ Now let's take a look at how to do this using Python's list comprehension syntax
 [2, 4, 6, 8, 10, 12, 14, 16, 18, 20]
 {% endhighlight %}
 
-h2. Syntax.
+## Syntax.
 
-The syntax for list comprehension is based on "set builder notation":http://en.wikipedia.org/wiki/Set-builder_notation. Given the form @[Y for X in LIST]@, @Y@ is commonly referred to as the _output function_ , @X@ is the _variable_, and @LIST@ is the _input set_. This statement says to do @Y@ on each @X@ in @LIST@.
+The syntax for list comprehension is based on [set builder notation](http://en.wikipedia.org/wiki/Set-builder_notation). Given the form `[Y for X in LIST]`, `Y` is commonly referred to as the _output function_ , `X` is the _variable_, and `LIST` is the _input set_. This statement says to do `Y` on each `X` in `LIST`.
 
-For an example of using a different _output function_ , let's say say we want a new list that contains each number in @my_list@ as a _string_ type...
+For an example of using a different _output function_ , let's say say we want a new list that contains each number in `my_list` as a _string_ type...
 
 {% highlight python %}
 >>> [str(x) for x in my_list]
 ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10']
 {% endhighlight %}
 
-You may be asking yourself why we wouldn't just use @map()@ here:
+You may be asking yourself why we wouldn't just use `map()` here:
 
 {% highlight python %}
 >>> map(str, my_list)
 ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10']
 {% endhighlight %}
 
-In this example, @map@ looks like a good alternative. However, for slightly more complicated requirements, list comprehension can be a bit more concise. For example, when we'd like to specify a _predicate_ .
+In this example, `map` looks like a good alternative. However, for slightly more complicated requirements, list comprehension can be a bit more concise. For example, when we'd like to specify a _predicate_ .
 
-h2. The predicate.
+## The predicate.
 
-Consider our previous example, where we want to create a list of string types for each element in @my_list@, except this time we only want the elements which are even numbers. A typical way to do this would be:
+Consider our previous example, where we want to create a list of string types for each element in `my_list`, except this time we only want the elements which are even numbers. A typical way to do this would be:
 
 {% highlight python %}
 >>> new_list = []
@@ -72,7 +70,7 @@ Consider our previous example, where we want to create a list of string types fo
 ['2', '4', '6', '8', '10']
 {% endhighlight %}
 
-In order to use @map()@ here we would need to first @filter@ the list to exclude the odd numbers.
+In order to use `map()` here we would need to first `filter` the list to exclude the odd numbers.
 
 Using the list comprehension syntax would look like this:
 
@@ -86,7 +84,7 @@ This version introduces the _predicate_, an expression after the list which acts
 
 Neat, clear and concise.
 
-h2. Loops of loops.
+## Loops of loops.
 
 Finally, it's worth mentioning that you can use list comprehensions to iterate on more than one list. For example:
 
@@ -97,7 +95,7 @@ Finally, it's worth mentioning that you can use list comprehensions to iterate o
 [('A', 1), ('A', 2), ('B', 1), ('B', 2)]
 {% endhighlight %}
 
-Just like you would expect in @for@ loops, the last loop moves the fastest. Also note that this method returns a list of @tuples@. If you'd like nested lists, you can also nest one list comprehension within another.
+Just like you would expect in `for` loops, the last loop moves the fastest. Also note that this method returns a list of `tuples`. If you'd like nested lists, you can also nest one list comprehension within another.
 
 {% highlight python %}
 >>> list_a = ['A', 'B']
@@ -106,15 +104,14 @@ Just like you would expect in @for@ loops, the last loop moves the fastest. Also
 [['AC', 'BC'], ['AD', 'BD']]
 {% endhighlight %}
 
-h2. Summary.
+## Summary.
 
 List comprehension in Python can often provide a neat, clear, and concise syntax for creating lists from other lists. However, one should always be aware that, particularly for complex transformations or predicates, the concise and terse syntax can quickly become very difficult to read. In these cases, it's often beneficial to revert to traditional looping constructs.
 
-</div>
 
-h2. Further reading.
+## Further reading.
 
-* "Set Builder Notation":http://en.wikipedia.org/wiki/Set-builder_notation
-* "PEP 202 -- List Comprehensions":http://www.python.org/dev/peps/pep-0202/
-* "Python Patterns - An Optimization Anecdote":http://www.python.org/doc/essays/list2str.html
-* "Python Performance Tips / Loops":http://wiki.python.org/moin/PythonSpeed/PerformanceTips#Loops
+* [Set Builder Notation](http://en.wikipedia.org/wiki/Set-builder_notation)
+* [PEP 202 -- List Comprehensions](http://www.python.org/dev/peps/pep-0202/)
+* [Python Patterns - An Optimization Anecdote](https://www.python.org/doc/essays/list2str/)
+* [Python Performance Tips / Loops](http://wiki.python.org/moin/PythonSpeed/PerformanceTips#Loops)
