@@ -1,2 +1,1 @@
-pygments: true
-permalink: pretty
+exclude: ['bower.json', 'bower_components', 'Gemfile', 'Gemfile.lock', 'README.md', 'tmp']
